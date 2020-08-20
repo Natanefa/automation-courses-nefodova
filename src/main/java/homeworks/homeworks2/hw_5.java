@@ -5,7 +5,7 @@ public class hw_5 {
         double x = 10;
         double b = -2 + x;
         double a = Math.pow(Math.pow(Math.E, b),1.0/5);
-        double c = Math.sqrt((Math.pow(x, 2)) + (Math.pow(x, 4) - (Math.log(Math.abs(x - Math.PI)))));
+        double c = Math.sqrt((Math.pow(x, 2)) + (Math.pow(x, 4) - (Math.log(Math.abs(x - 3.14)))));
 
         double res= a * (1.0 / c);
 
