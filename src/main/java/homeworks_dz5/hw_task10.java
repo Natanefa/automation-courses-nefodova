@@ -18,7 +18,7 @@ public class hw_task10 {
         if (operation.equals("*")) {
             System.out.println("x * y = " + (x * y));}
         if (operation.equals("/") && y != 0) {
-            System.out.println("x / y = " + (x / y));}
+            System.out.println("x / y = " + ((float)x / (float)y));}
         else System.out.println("Enter valid data");
-    }
+        }
 }
