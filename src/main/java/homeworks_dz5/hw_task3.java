@@ -22,7 +22,6 @@ public class hw_task3 {
         } else if ((d < a) && (d < b) && (d < c)) {
             System.out.println(d + "  наименьшее");
         }
-
     }
     }
 
