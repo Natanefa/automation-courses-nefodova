@@ -1,5 +1,8 @@
 package homework_dz7;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class hw_task2 {
     public static void main(String[] args) {
         String str = "Here you can find activities to practise your reading skills. Reading will help you to improve your understanding of the language and build your vocabulary.";
@@ -44,6 +47,28 @@ public class hw_task2 {
             letters = letters +1;
         }
         System.out.println("Character count = " + letters);
+        System.out.println("");
+
+//        Pattern pattern = new Pattern("\\d+");
+//        String code = "AX6BYU56UX6CV6BNT7NM";
+//        Matcher matcher = pattern.matcher(code);
+//        int start = 0;
+//        while (matcher.find(start)) {
+//            String numbers = code.substring(matcher.start(), matcher.end());
+//            int res = Integer.parseInt(numbers);
+//            System.out.println(res);
+//            start = matcher.end();
+//        }
+        Pattern pat=Pattern.compile("(\\d)\\D*(\\d)");
+        Matcher matcher=pat.matcher("AX6BYU56UX6CV6BNT7NM");
+        int digits = 1;
+        while (matcher.find()) {
+            System.out.println("numbers code: " + matcher.group(1) + matcher.group(2));
+            digits = digits * Integer.parseInt(matcher.group(1) + matcher.group(2));
+        };
+        System.out.println("AX6BYU56UX6CV6BNT7NM" + " " + digits);
+        System.out.println("");
+
 
         char [] Text = {'h', 'e', 'l', 'p'};
         System.out.println(String.copyValueOf(Text, 0, 4));
