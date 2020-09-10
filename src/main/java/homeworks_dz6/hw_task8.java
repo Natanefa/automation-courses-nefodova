@@ -10,10 +10,8 @@ public class hw_task8 {
 
         for (int i = 0; i < 20; i++) {
             if (i >= start && i <= stop){
-//                System.out.println(i);
-                continue;
+            continue;
             }
-//            System.out.println(i +  " " + myArray[i]);
             resArray[resIndex] = myArray[i];
             resIndex++;
         }
