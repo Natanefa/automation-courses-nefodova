@@ -7,7 +7,6 @@ public class hw_task4 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input a number: ");
         String numbers = scanner.nextLine();
-        // System.out.println(numbers);
         int sum1 = 0;
         int sum2 = 0;
         for (int i = 0; i < numbers.length(); i++) {
