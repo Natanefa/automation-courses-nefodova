@@ -8,7 +8,6 @@ public class hw_task9 {
         int skip = 1;
         int sum = 0;
         for (int i = 0; i < myArray.length; i++) {
-//            System.out.println(myArray[i]);
             if (myArray[i] < 0 && skip==1){
                 skip=0;
                 System.out.println(myArray[i]);
