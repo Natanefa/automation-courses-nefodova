@@ -2,63 +2,46 @@ package homework_dz7;
 
 import java.util.Scanner;
 
-public class hw_task1 {
+public class hw_task1_1 {
 
     public static double celcius2kelvin(double temp){
-        temp = temp + 273.16;
-        return temp;
+        return temp = temp + 273.16;
     }
 
     public static double kelvin2celcius(double temp){
-        temp = temp - 273.16;
-        return temp;
+        return temp - 273.16;
     }
 
     public static double celcius2fahrenheit(double temp){
-        temp = (temp * (9.0/5.0)) + 32;
-        return temp;
+        return  temp = (temp * (9.0/5.0)) + 32;
     }
 
     public static double fahrenheit2celsius(double temp){
-        temp = (temp - 32.0) * (5.0/9.0);
-        return temp;
+        return  temp = (temp - 32.0) * (5.0/9.0);
     }
 
     public static double meters2inches(double meter){
-        meter = meter * 39.37;
-        return meter;
+        return  meter = meter * 39.37;
     }
 
     public static double inches2meter(double meter){
-        meter = meter / 39.37;
-        return meter;
+       return meter = meter / 39.37;
     }
 
     public static double miles2kilometer(double mile){
-        mile = mile * 1.609;
-        return mile;
+       return mile = mile * 1.609;
     }
 
     public static double kilometer2meter(double km){
-        km = km * 1000;
-        return km;
+       return km = km * 1000;
     }
 
     public static double phounds2kg(double phounds){
-        phounds = phounds / 2.205;
-        return phounds;
+        return  phounds = phounds / 2.205;
     }
 
     public static double kg2phounds(double phounds){
-        phounds = phounds * 2.194;
-        return phounds;
-    }
-
-    public static double func(double x, double y){
-        x = Math.pow(x,2);
-        y = Math.pow(y,2);
-        double res = x + y;
-        return  res;
+        return phounds = phounds * 2.194;
     }
 
     public static void main(String[] args) {
@@ -97,10 +80,6 @@ public class hw_task1 {
         System.out.println(phounds);
 
 
-        double x = 4;
-        double y = 4;
-        double res = func(x, y);
-        System.out.println(res);
     }
 
 }
