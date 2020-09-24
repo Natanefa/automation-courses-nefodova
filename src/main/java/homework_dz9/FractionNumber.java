@@ -9,22 +9,28 @@ public class FractionNumber {
         this.denominator = denominator;
     }
 
-    public FractionNumber plus (FractionNumber num){
+    public FractionNumber plus(FractionNumber num) {
         int nom = this.nominator * num.getDenominator() + num.getNominator() * this.getDenominator();
         int deNom = this.denominator * num.getDenominator();
         return new FractionNumber(nom, deNom);
     }
 
-    public void minus(){
-
+    public FractionNumber minus(FractionNumber num) {
+        int nom = this.nominator * num.getDenominator() - num.getNominator() * this.getDenominator();
+        int deNom = this.denominator * num.getDenominator();
+        return new FractionNumber(nom, deNom);
     }
 
-    public void multiply(){
-
+    public FractionNumber multiply(FractionNumber num) {
+        int nom = this.nominator * num.getDenominator();
+        int deNom = this.denominator * num.getDenominator();
+        return new FractionNumber(nom, deNom);
     }
 
-    public void derive(){
-
+    public FractionNumber devide (FractionNumber num) {
+        int nom = this.nominator * num.getDenominator();
+        int deNom = this.denominator * num.getNominator();
+        return new FractionNumber(nom, deNom);
     }
 
     public int getNominator() {
